@@ -1,53 +1,23 @@
-from collections import deque
+import math
 
-def water_jug_problem(m, n, d):
-    # Check if solution is possible
+def is_possible(m, n, d):
+    # If target is greater than both jug capacities
     if d > max(m, n):
-        return "No solution possible"
+        return False
     
-    visited = set()
-    queue = deque([(0, 0, [])])  # (jug1, jug2, path)
-
-    while queue:
-        jug1, jug2, path = queue.popleft()
-
-        if (jug1, jug2) in visited:
-            continue
-        
-        visited.add((jug1, jug2))
-
-        # Add current state to path
-        path = path + [(jug1, jug2)]
-
-        # If target reached
-        if jug1 == d or jug2 == d:
-            return path
-
-        # Possible operations
-        next_states = [
-            (m, jug2),                # Fill Jug1
-            (jug1, n),                # Fill Jug2
-            (0, jug2),                # Empty Jug1
-            (jug1, 0),                # Empty Jug2
-            # Pour Jug1 -> Jug2
-            (jug1 - min(jug1, n - jug2), jug2 + min(jug1, n - jug2)),
-            # Pour Jug2 -> Jug1
-            (jug1 + min(jug2, m - jug1), jug2 - min(jug2, m - jug1))
-        ]
-
-        for state in next_states:
-            if state not in visited:
-                queue.append((state[0], state[1], path))
-
-    return "No solution found"
+    # Check mathematical condition
+    if d % math.gcd(m, n) == 0:
+        return True
+    
+    return False
 
 
-# Example
-m = 4   # Jug1 capacity
-n = 3   # Jug2 capacity
-d = 2   # Target
+# Taking input
+m = int(input("Enter capacity of Jug 1: "))
+n = int(input("Enter capacity of Jug 2: "))
+d = int(input("Enter target amount: "))
 
-solution = water_jug_problem(m, n, d)
-
-print("Steps to reach solution:")
-print(solution)
+if is_possible(m, n, d):
+    print("Yes, it is possible to measure", d, "liters.")
+else:
+    print("No, it is NOT possible to measure", d, "liters.")
