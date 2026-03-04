@@ -1,4 +1,6 @@
 2025
+Superman
+Anaconda 
 Nuremberg
 Jurassic World Rebirth
 A Minecraft Movie
@@ -8,6 +10,8 @@ Mission: Impossible – The Final Reckoning
 The Gorge
 
 2024
+Snack Shack
+Kinds Of Kindness 
 Subservience
 The Idea of You
 Miller's Girl
@@ -63,6 +67,7 @@ Uncharted
 Lamborghini: The Man Behind the Legend
 
 2021
+Jungle Cruise 
 The Voyeurs
 No Time to Die
 CODA
@@ -140,6 +145,7 @@ The Great Wall
 XXX: Return of Xander Cage
 
 2016
+Suicide Squad
 Snowden
 Mechanic: Resurrection
 The Legend of Tarzan
@@ -159,6 +165,7 @@ Gods of Egypt
 Deadpool
 
 2015
+Lethal Seduction
 Terminator Genisys
 McFarland, USA
 Spectre
@@ -177,6 +184,7 @@ Furious 7
 Kingsman: The Secret Service
 
 2014
+22 Jump Street
 Son of a Gun
 Gone Girl
 RoboCop
@@ -199,6 +207,7 @@ Captain America: The Winter Soldier
 300: Rise of an Empire
 
 2013
+Oldboy 
 Rush
 Prisoners
 Pacific Rim
@@ -219,6 +228,8 @@ Frozen
 The Wolf of Wall Street
 
 2012
+21 Jump Street 
+The Vow
 Skyfall
 Ted
 Project X
@@ -293,6 +304,7 @@ The Hangover
 Anacondas: Trail of Blood
 
 2008
+The Reader
 Doubt
 Quantum of Solace
 Valkyrie
